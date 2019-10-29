@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    --margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.block_wrapper {
+    float: left;
+    padding: 10px;
+}
+
+.block {
+    background-color: #9a9a9a;
+    border: 1px solid black;
+    position: relative;
+}
+
+.block_title {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 2px 25px;
+    right: 0;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.block_title.rose {
+    background-color: mistyrose;
+}
+
+.block_title.red {
+    background-color: red;
+    color: white;
+}
+
+.block_title.yellow {
+    background-color: yellow;
+}
+
+.block p {
+    margin: 30px 10px 3px;
+    clear: both;
+}
+
+@media (min-width: 992px) {
+    .block_wrapper {
+        width: 33.3%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .block_wrapper {
+        width: 50%;
+    }
+
+    .block_wrapper:last-child {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .block_wrapper {
+        width: 100%;
+    }
+}
